@@ -5,13 +5,100 @@
   <b><a href="https://iperf3serverlist.net" target="_blank">iperf3serverlist.net</a></b><br/>
   <br/>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-green.svg?color=0066ff&style=for-the-badge&label=License&logoColor=000000&labelColor=ececec" alt="License: MIT"></a> <br/>
-   <a href="https://stand-with-ukraine.pp.ua"><img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraineFlat.svg" alt="#StandWithUkraine" /></a>
-<h3 align="center">A list of public iPERF3 servers to perform bandwidth and speedtests across different geographical regions.</h3>  
-  </a>
-</p>
-<p align="center">
-This project is sponsored and supported by <a href="https://cloud.hosthatch.com/a/772" target="_blank">HostHatch</a> and <a href="https://censys.com" target="_blank">Censys</a>.
-</p>
+
+<hr>
+
+   # 🚀 Featured NL Sources
+
+> **Fast access to public iPerf3 servers in The Netherlands 🇳🇱**
+
+<table>
+  <thead>
+    <tr>
+      <th>🌐 Server / Command</th>
+      <th>🔧 Options</th>
+      <th>⚡ Streams</th>
+      <th>📍 Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>iperf3 -c 185.102.218.1</code></td>
+      <td>-R, -u</td>
+      <td>2x10</td>
+      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+    </tr>
+    <tr>
+      <td><code>iperf3 -c a204.speedtest.wobcom.de</code></td>
+      <td>-R, -6</td>
+      <td>2x25</td>
+      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+    </tr>
+    <tr>
+      <td><code>iperf3 -c ams.speedtest.clouvider.net -p 5200-5209</code></td>
+      <td>-R, -6, -u</td>
+      <td>10</td>
+      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+    </tr>
+    <tr>
+      <td><code>iperf3 -c iperf-ams-nl.eranium.net -p 5201-5210</code></td>
+      <td>-R, -6, -u</td>
+      <td>100</td>
+      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+    </tr>
+    <tr>
+      <td><code>iperf3 -c lg.ams-nl.terrahost.com -p 9206-9240</code></td>
+      <td>-R, -6, -u</td>
+      <td>(varied)</td>
+      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+    </tr>
+    <tr>
+      <td><code>iperf3 -c ping-ams1.online.net -p 5200-5209</code></td>
+      <td>-R, -u</td>
+      <td>10</td>
+      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+    </tr>
+    <tr>
+      <td><code>iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5201-5210</code></td>
+      <td>-R, -6</td>
+      <td>10</td>
+      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+    </tr>
+    <tr>
+      <td><code>iperf3 -c speedtest.ams1.novogara.net -p 5200-5209</code></td>
+      <td>-R, -6, -u</td>
+      <td>20</td>
+      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+    </tr>
+    <tr>
+      <td><code>iperf3 -c speedtest.ams2.nl.leaseweb.net -p 5201-5210</code></td>
+      <td>-R, -6</td>
+      <td>10</td>
+      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+    </tr>
+    <tr>
+      <td><code>iperf3 -c speedtest.nl3.mirhosting.net -p 5201-5210</code></td>
+      <td>-R, -6, -u</td>
+      <td>40</td>
+      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+    </tr>
+    <tr>
+      <td><code>iperf3 -c iperf.worldstream.nl</code></td>
+      <td>-R, -6</td>
+      <td>10</td>
+      <td>Naaldwijk <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+> 💡 **Tip:** Copy any `iperf3` command above and run it to test your connection to NL servers!
+
+---
+
+# Public iPerf3 servers - POV from The Netherlands (NL)
+
 
 ## Table of Contents
 
