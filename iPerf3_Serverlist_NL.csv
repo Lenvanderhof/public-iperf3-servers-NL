@@ -1,0 +1,12 @@
+IP/HOST,OPTIONS,GB/S,COUNTRY,SITE,CONTINENT,PROVIDER
+iperf3 -c 185.102.218.1,"-R,-u",2x10,NL,Amsterdam,Europe,DATAPACKET
+iperf3 -c a204.speedtest.wobcom.de,"-R,-6",2x25,NL,Amsterdam,Europe,WOBCOM
+iperf3 -c ams.speedtest.clouvider.net -p 5200-5209,"-R,-6,-u",10,NL,Amsterdam,Europe,Clouvider
+iperf3 -c iperf-ams-nl.eranium.net -p 5201-5210,"-R,-6,-u",100,NL,Amsterdam,Europe,Eranium
+iperf3 -c lg.ams-nl.terrahost.com -p 9206-9240,"-R,-6,-u",,NL,Amsterdam,Europe,TerraHost
+iperf3 -c ping-ams1.online.net -p 5200-5209,"-R,-u",10,NL,Amsterdam,Europe,Scaleway
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5201-5210,"-R,-6",10,NL,Amsterdam,Europe,LeaseWeb
+iperf3 -c speedtest.ams1.novogara.net -p 5200-5209,"-R,-6,-u",20,NL,Amsterdam,Europe,Novogara
+iperf3 -c speedtest.ams2.nl.leaseweb.net -p 5201-5210,"-R,-6",10,NL,Amsterdam,Europe,LeaseWeb
+iperf3 -c speedtest.nl3.mirhosting.net -p 5201-5210,"-R,-6,-u",40,NL,Amsterdam,Europe,Mirhosting
+iperf3 -c iperf.worldstream.nl,"-R,-6",10,NL,Naaldwijk,Europe,Worldstream
