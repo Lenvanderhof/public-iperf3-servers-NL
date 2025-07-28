@@ -8,6 +8,17 @@
 
 <hr>
 
+<p align="center">
+  <a href="https://github.com/Lenvanderhof/public-iperf3-servers-NL/blob/67977b6eb83299845e63bcf938eaf78f4719e253/iPerf3_Serverlist_NL.csv">
+    <img src="https://img.shields.io/badge/Download%20CSV-Netherlands%20Servers-blue?style=for-the-badge&logo=csv" alt="Download Netherlands CSV">
+  </a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/Lenvanderhof/public-iperf3-servers-NL/blob/67977b6eb83299845e63bcf938eaf78f4719e253/iPerf3_Serverlist_NL.xlsx">
+    <img src="https://img.shields.io/badge/Download%20Excel-Netherlands%20Servers-green?style=for-the-badge&logo=microsoft-excel" alt="Download Netherlands Excel">
+  </a>
+</p>
+
+<hr>
+
    # 🚀 Featured NL Sources
 
 > **Fast access to public iPerf3 servers in The Netherlands 🇳🇱**
