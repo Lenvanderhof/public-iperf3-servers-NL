@@ -357,6 +357,180 @@ iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -R -u -b 10M -t 30
 | **4G** | 30-150 Mbps | 10-50 Mbps | 20-50 ms |
 | **5G** | 100-1000 Mbps | 50-200 Mbps | 10-30 ms |
 
+## 🚀 Nederlandse Performance Benchmarking
+
+### Glasvezel Prestatie Tests
+```bash
+# Symmetrische glasvezel benchmark
+echo "Testing 100/100 Mbps glasvezel:"
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 --bidir -t 30
+
+echo "Testing 500/500 Mbps glasvezel:"
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -P 2 --bidir -t 30
+
+echo "Testing 1000/1000 Mbps glasvezel:"
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -P 4 --bidir -t 30
+```
+
+### Cable/DOCSIS Prestatie Tests
+```bash
+# Asymmetrische cable benchmark  
+echo "Cable download test:"
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -t 30
+
+echo "Cable upload test (meestal lager):"
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -R -t 30
+
+# Upload/Download ratio berekening
+# Verwacht: Download 5x-20x hoger dan upload bij cable
+```
+
+### ADSL/VDSL Prestatie Tests
+```bash
+# Copper lijn tests
+echo "ADSL/VDSL download:"
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -t 20
+
+echo "ADSL/VDSL upload:"  
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -R -t 20
+
+# Stabiliteit test (copper lijnen kunnen variëren)
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -t 60 -i 10
+```
+
+## 📱 Nederlandse Mobiele Netwerk Optimalisatie
+
+### 4G/5G Provider Prestaties
+
+#### KPN Mobiel
+```bash
+# KPN 4G test (conservatief)
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -u -b 100M -t 15
+
+# KPN 5G test (aggressief bij goede dekking)
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -u -b 500M -t 15
+
+# Latency test voor gaming
+ping -c 10 iperf-ams-nl.eranium.net
+```
+
+#### VodafoneZiggo Mobiel
+```bash
+# VodafoneZiggo 4G test
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -u -b 80M -t 15
+
+# VodafoneZiggo 5G test
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -u -b 400M -t 15
+```
+
+#### T-Mobile Nederland
+```bash
+# T-Mobile 4G test
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -u -b 60M -t 15
+
+# T-Mobile 5G test  
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -u -b 300M -t 15
+```
+
+### Nederlandse 5G Frequenties & Prestaties
+| **Frequentieband** | **Bereik** | **Snelheid** | **Penetratie** | **Provider** |
+|:-------------------|:-----------|:-------------|:---------------|:-------------|
+| **700 MHz** | Excellent | Medium | Excellent | KPN, VZ, T-Mobile |
+| **1800 MHz** | Good | Medium | Good | KPN, VZ, T-Mobile |
+| **2100 MHz** | Medium | High | Medium | KPN, VZ |
+| **3.5 GHz** | Limited | Very High | Poor | KPN, VZ, T-Mobile |
+
+### Mobiele Test Scenario's
+```bash
+# Binnen stedelijk gebied (Amsterdam/Rotterdam/Den Haag)
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -u -b 200M -t 10
+
+# Buiten/landelijk gebied
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -u -b 50M -t 10
+
+# Binnen gebouwen (verminderde prestaties)
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -u -b 30M -t 10
+
+# Snelweg/trein (handover variabiliteit)
+iperf3 -c ping-ams1.online.net -p 5205 -u -b 40M -t 5
+```
+
+## 🔧 Geavanceerde Nederlandse Netwerk Troubleshooting
+
+### KPN Glasvezel Problemen
+
+#### Probleem: Avondspits vertraging
+**Symptomen**: Snelheden dalen tussen 19:00-23:00
+**Diagnose**:
+```bash
+# Test tijdens verschillende tijden
+echo "Rustig uur (10:00):"
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -t 15
+
+echo "Spitsuur (21:00):"
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -t 15
+```
+**Oplossing**: Gebruik meerdere streams (`-P 2` of `-P 4`)
+
+#### Probleem: IPv6 vs IPv4 prestatie
+**Diagnose**:
+```bash
+echo "IPv4 prestatie:"
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -4 -t 10
+
+echo "IPv6 prestatie:"
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -6 -t 10
+```
+
+### Ziggo Cable Problemen
+
+#### Probleem: Upload veel lager dan advertised
+**Verwacht**: Bij 200/20 plan, upload vaak 15-18 Mbps
+**Test**:
+```bash
+# Upload realiteitscheck
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -R -t 30
+```
+
+#### Probleem: Variabele snelheden (shared medium)
+**Test stabiliteit**:
+```bash
+# Langere test met intervallen
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -t 300 -i 30
+```
+
+### T-Mobile/Tele2 Hybride Problemen
+
+#### Probleem: Onverwachte routing
+**Diagnose**:
+```bash
+# Traceroute naar Nederlandse servers
+traceroute iperf-ams-nl.eranium.net
+traceroute speedtest.ams1.nl.leaseweb.net
+
+# Check voor internationale hops
+```
+
+### Algemene Nederlandse ISP Issues
+
+#### DNS Prestatie
+```bash
+# Test Nederlandse DNS servers
+dig @8.8.8.8 iperf-ams-nl.eranium.net
+dig @1.1.1.1 iperf-ams-nl.eranium.net  
+dig @194.242.2.2 iperf-ams-nl.eranium.net # Xs4all DNS
+```
+
+#### MTU Discovery voor Nederlandse Netwerken
+```bash
+# Nederlandse standaard MTU test
+ping -M do -s 1472 iperf-ams-nl.eranium.net # 1500 MTU
+ping -M do -s 1436 iperf-ams-nl.eranium.net # PPPoE compensatie
+
+# Glasvezel jumbo frames (als ondersteund)
+ping -M do -s 8972 iperf-ams-nl.eranium.net # 9000 MTU
+```
+
 ---
 
 # Public iPerf3 servers - POV from The Netherlands (NL)
@@ -699,6 +873,24 @@ Do you want to add/remove an IP or HOST to this list? Please create a [new issue
 | iperf3 -c chch.linetest.nz -p 5300-5309 | -R | 10 | NZ \| ![nz](https://flagcdn.com/16x12/nz.png) | Christchurch |
 | iperf3 -c 154.81.51.4  | -R,-u | 2x10 | PG \| ![pg](https://flagcdn.com/16x12/pg.png) | Port Moresby |
 
+## 🛠️ Interactieve Nederlandse Tools
+
+### Nederlandse Geoptimaliseerde Tools
+```bash
+# Interactieve server selector met ISP detectie
+curl -s https://raw.githubusercontent.com/Lenvanderhof/public-iperf3-servers-NL/main/interactive-nl.sh | bash
+
+# Nederlandse automatische finder & tester
+curl -s https://raw.githubusercontent.com/Lenvanderhof/public-iperf3-servers-NL/main/findtest-nl.sh | bash
+```
+
+**Voordelen van Nederlandse tools:**
+- 🔍 Automatische ISP detectie (KPN, Ziggo, T-Mobile)
+- 🎯 Intelligente server selectie gebaseerd op je verbindingstype
+- 🇳🇱 Nederlandse taal en context
+- ⚡ Geoptimaliseerd voor Nederlandse netwerk karakteristieken
+- 📊 ISP-specifieke test aanbevelingen
+
 ## Export
 
 | CONTINENT (NocoDB)                                           | .CSV                                                         | .XLSX                                                        | .JSON                                                        |
@@ -714,5 +906,40 @@ Do you want to add/remove an IP or HOST to this list? Please create a [new issue
 :arrows_counterclockwise: ​**CSV & JSON GENERATOR**: https://export.iperf3serverlist.net
 
 ## Contact
+
+**Voor de Nederlandse community:**
+- GitHub: https://github.com/Lenvanderhof/public-iperf3-servers-NL
+- Nederlandse iPerf3 discussies: Gebruik GitHub Issues
+- Server toevoegingen/wijzigingen: Maak een Pull Request
+- Nederlandse tech communities: Tweakers, FOK!, Reddit r/thenetherlands
+
+**Originele project:**
 Contact me via e-mail - r0gger[at]iperf3serverlist.net
+
+## 🤝 Bijdragen aan het Nederlandse Project
+
+### Server Toevoegingen
+Heb je een Nederlandse iPerf3 server die toegevoegd moet worden?
+1. Zorg dat de server stabiel is (>90% uptime)
+2. Test de server vanuit verschillende Nederlandse netwerken
+3. Maak een GitHub Issue met server details
+4. Include: hostname/IP, poort, capaciteit, locatie, provider
+
+### Verbeteringen
+- Nederlandse ISP specifieke optimalisaties
+- Nieuwe test scenario's
+- Documentatie verbeteringen
+- Nederlandse taal verbeteringen
+
+### Datacenter Partnerships
+Nederlandse hosting providers die willen bijdragen:
+- Publieke iPerf3 servers beschikbaar stellen
+- Nederlandse community ondersteunen
+- Netwerk prestatie transparantie
+
+---
+
+**🇳🇱 Gemaakt voor Nederlandse gebruikers, door Nederlandse contributors**
+
+*Dit project is een Nederlandse variant van het originele public-iperf3-servers project, geoptimaliseerd voor Nederlandse netwerken en gebruikers.*
 
