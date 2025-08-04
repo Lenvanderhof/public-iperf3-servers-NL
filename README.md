@@ -1,8 +1,9 @@
-# Public iPerf3 Serverlist
+# 🇳🇱 Public iPerf3 Servers - Geoptimaliseerd voor Nederland
 
 <p align="center"><br/>
   <a href="https://iperf3serverlist.net" target="_blank"><img src="iperf3serverlist_256.png" width="150"></a><br/>  
   <b><a href="https://iperf3serverlist.net" target="_blank">iperf3serverlist.net</a></b><br/>
+  <sub>🇳🇱 Nederlandse editie - Voor optimale prestaties in Nederland</sub><br/>
   <br/>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-green.svg?color=0066ff&style=for-the-badge&label=License&logoColor=000000&labelColor=ececec" alt="License: MIT"></a> <br/>
 
@@ -17,94 +18,518 @@
   </a>
 </p>
 
+## 🛠️ Automatische Server Selectie
+
+### Nederlandse Geoptimaliseerde Finder 🇳🇱
+```bash
+curl -s https://raw.githubusercontent.com/Lenvanderhof/public-iperf3-servers-NL/main/findtest-nl.sh | bash
+```
+*Speciaal ontwikkeld voor Nederlandse ISPs en netwerken - Detecteert automatisch je ISP en geeft specifieke aanbevelingen*
+
+### Internationale Versie 🌍  
+```bash
+curl -s https://raw.githubusercontent.com/R0GGER/public-iperf3-servers/main/findtest.sh | bash
+```
+*Globale server selectie gebaseerd op geografische locatie*
+
 <hr>
 
-   # 🚀 Featured NL Sources
+   # 🚀 Premium Nederlandse iPerf3 Servers
 
-> **Fast access to public iPerf3 servers in The Netherlands 🇳🇱**
+> **🇳🇱 Geoptimaliseerd voor Nederlandse gebruikers - Lokale servers voor de beste prestaties**
+
+## 🏆 Top Aanbevolen Servers voor Nederland
 
 <table>
   <thead>
     <tr>
-      <th>🌐 Server / Command</th>
-      <th>🔧 Options</th>
-      <th>⚡ Streams</th>
-      <th>📍 Location</th>
+      <th>🌐 Server / Commando</th>
+      <th>🔧 Opties</th>
+      <th>⚡ Capaciteit</th>
+      <th>📍 Locatie</th>
+      <th>🎯 Aanbeveling</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code>iperf3 -c 185.102.218.1</code></td>
-      <td>-R, -u</td>
-      <td>2x10</td>
-      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+      <td><code>iperf3 -c iperf-ams-nl.eranium.net -p 5205</code></td>
+      <td>-R, -6, -u</td>
+      <td>100 Gbps</td>
+      <td>Amsterdam AMS-IX</td>
+      <td>🥇 Best voor high-speed tests</td>
+    </tr>
+    <tr>
+      <td><code>iperf3 -c speedtest.nl3.mirhosting.net -p 5205</code></td>
+      <td>-R, -6, -u</td>
+      <td>40 Gbps</td>
+      <td>Amsterdam</td>
+      <td>🥈 Uitstekend voor glasvezel</td>
     </tr>
     <tr>
       <td><code>iperf3 -c a204.speedtest.wobcom.de</code></td>
       <td>-R, -6</td>
-      <td>2x25</td>
-      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+      <td>25 Gbps</td>
+      <td>Amsterdam</td>
+      <td>🥉 Betrouwbaar & stabiel</td>
     </tr>
     <tr>
-      <td><code>iperf3 -c ams.speedtest.clouvider.net -p 5200-5209</code></td>
+      <td><code>iperf3 -c speedtest.ams1.novogara.net -p 5205</code></td>
       <td>-R, -6, -u</td>
-      <td>10</td>
-      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
-    </tr>
-    <tr>
-      <td><code>iperf3 -c iperf-ams-nl.eranium.net -p 5201-5210</code></td>
-      <td>-R, -6, -u</td>
-      <td>100</td>
-      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
-    </tr>
-    <tr>
-      <td><code>iperf3 -c lg.ams-nl.terrahost.com -p 9206-9240</code></td>
-      <td>-R, -6, -u</td>
-      <td>(varied)</td>
-      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
-    </tr>
-    <tr>
-      <td><code>iperf3 -c ping-ams1.online.net -p 5200-5209</code></td>
-      <td>-R, -u</td>
-      <td>10</td>
-      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
-    </tr>
-    <tr>
-      <td><code>iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5201-5210</code></td>
-      <td>-R, -6</td>
-      <td>10</td>
-      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
-    </tr>
-    <tr>
-      <td><code>iperf3 -c speedtest.ams1.novogara.net -p 5200-5209</code></td>
-      <td>-R, -6, -u</td>
-      <td>20</td>
-      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
-    </tr>
-    <tr>
-      <td><code>iperf3 -c speedtest.ams2.nl.leaseweb.net -p 5201-5210</code></td>
-      <td>-R, -6</td>
-      <td>10</td>
-      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
-    </tr>
-    <tr>
-      <td><code>iperf3 -c speedtest.nl3.mirhosting.net -p 5201-5210</code></td>
-      <td>-R, -6, -u</td>
-      <td>40</td>
-      <td>Amsterdam <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+      <td>20 Gbps</td>
+      <td>Amsterdam</td>
+      <td>💼 Zakelijk gebruik</td>
     </tr>
     <tr>
       <td><code>iperf3 -c iperf.worldstream.nl</code></td>
       <td>-R, -6</td>
-      <td>10</td>
-      <td>Naaldwijk <img src="https://flagcdn.com/16x12/nl.png" alt="NL"></td>
+      <td>10 Gbps</td>
+      <td>Naaldwijk</td>
+      <td>🌿 Westland datacenter</td>
     </tr>
   </tbody>
 </table>
 
+## 🎛️ Aanbevolen Test Configuraties
+
+### Voor Nederlandse Glasvezel (Fiber) Connecties 🌐
+```bash
+# Test je volledige glasvezel bandbreedte (beide richtingen)
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 --bidir -t 30
+
+# IPv6 test (veel Nederlandse ISPs ondersteunen dit)
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -6 -t 15
+
+# UDP jitter test voor gaming/VoIP
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -u -b 100M -t 10
+```
+
+### Voor Nederlandse ADSL/VDSL/Cable Connecties 📡
+```bash
+# Conservatieve test voor copper verbindingen
+iperf3 -c 185.102.218.1 -t 15 -i 5
+
+# Download test (reverse mode)
+iperf3 -c speedtest.ams2.nl.leaseweb.net -p 5205 -R -t 20
+```
+
+### Voor Nederlandse Mobiele Netwerken 📱
+```bash
+# 4G/5G test met beperkte bandbreedte
+iperf3 -c ping-ams1.online.net -p 5205 -u -b 50M -t 10
+
+# Latency-gevoelige test
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -t 5 -i 1
+```
+
+## 🏢 Nederlandse Datacenter Locaties
+
+| **Datacenter** | **Stad** | **Providers** | **Verbinding** |
+|:---------------|:---------|:-------------|:---------------|
+| **AMS-IX** | Amsterdam | Eranium, LeaseWeb, Clouvider | AMS-IX peering |
+| **Equinix AM1-AM8** | Amsterdam | Diverse providers | Premium connectivity |
+| **NIKHEF** | Amsterdam | Academisch netwerk | SURFnet |
+| **Serverius DC2** | Meppel | Worldstream, locals | Fiber backbone |
+| **Iron Mountain AM1** | Amsterdam | Enterprise hosting | Multiple carriers |
+
+## 🇳🇱 ISP-Specifieke Tips
+
+### KPN
+- Gebruik IPv6 voor beste prestaties: `-6`
+- Test via Amsterdam servers voor optimale routing
+- ADSL: verwacht 8-24 Mbps, Glasvezel: tot 1 Gbps
+
+### Ziggo/VodafoneZiggo  
+- Gebruik TCP tests voor stabiele metingen
+- Upload kan lager zijn dan download (DOCSIS)
+- Cable: 100-1000 Mbps typisch
+
+### T-Mobile/Tele2
+- Mobile: test met `-u -b 50M` voor realistisch resultaat
+- Fiber: gebruik high-capacity servers (Eranium/Mirhosting)
+
+### Xs4all (KPN)
+- Vaak uitstekende IPv6 ondersteuning
+- Test met zowel IPv4 als IPv6 voor vergelijking
+
 ---
 
-> 💡 **Tip:** Copy any `iperf3` command above and run it to test your connection to NL servers!
+> 💡 **Tip:** Kopieer elk `iperf3` commando hierboven en voer het uit om je verbinding naar NL servers te testen!
+
+---
+
+# 🇳🇱 Nederlandse Netwerk Optimalisatie Gids
+
+## 🌍 Waarom Nederlandse Servers Gebruiken?
+
+### Voordelen van lokale servers:
+- **Lagere latency** (~1-5ms vs 50-200ms internationale servers)
+- **Betrouwbaardere metingen** (minder netwerk variabelen)
+- **Realistische prestaties** voor Nederlandse internet gebruik
+- **Betere IPv6 ondersteuning** (Nederland is IPv6 koploper)
+
+## 🔧 Nederlandse ISP Optimalisaties
+
+### 🟢 KPN (Koninklijke PTT Nederland)
+```bash
+# Glasvezel test (tot 1 Gbps)
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -6 -t 30
+
+# ADSL/VDSL test  
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -t 20 -i 5
+
+# IPv6 prioriteit (KPN heeft uitstekende IPv6)
+iperf3 -c speedtest.ams2.nl.leaseweb.net -p 5205 -6 --bidir
+```
+
+**KPN Specifieke Tips:**
+- Gebruik IPv6 waar mogelijk (-6 flag)
+- Glasvezel: test tijdens verschillende tijden (avondspits kan trager zijn)
+- ADSL/VDSL: upload is asymmetrisch (meestal 10-40% van download)
+
+### 🔵 Ziggo/VodafoneZiggo (Cable)
+```bash
+# Cable modem test (DOCSIS 3.1)
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -t 30
+
+# Upload test (vaak lager bij cable)
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -R -t 15
+
+# Stabiliteit test
+iperf3 -c 185.102.218.1 -t 60 -i 10
+```
+
+**Ziggo Specifieke Tips:**
+- Upload snelheid is vaak 5-20% van download bij cable
+- Test op verschillende tijden (shared medium effect)
+- Gebruik TCP voor stabiele metingen
+
+### 🟡 T-Mobile/Tele2
+```bash
+# Glasvezel test
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 --bidir -t 20
+
+# 4G/5G mobiel test
+iperf3 -c ping-ams1.online.net -p 5205 -u -b 100M -t 10
+
+# Hybride verbinding test
+iperf3 -c speedtest.ams1.novogara.net -p 5205 -P 3 -t 15
+```
+
+### 🟠 Delta/Caiway (Regional Cable)
+```bash
+# Regionale kabel test
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -t 20
+
+# Latency-gevoelige test
+iperf3 -c speedtest.ams2.nl.leaseweb.net -p 5205 -i 1 -t 10
+```
+
+## 📊 Nederlandse Datacenter Ecosystem
+
+### 🏢 Tier 1 Datacenters
+| **Naam** | **Locatie** | **Specialisatie** | **Aanbevolen Server** |
+|:---------|:------------|:------------------|:---------------------|
+| **AMS-IX** | Amsterdam | Internet Exchange | `iperf-ams-nl.eranium.net` |
+| **Equinix AM1-8** | Amsterdam | Carrier Neutral | `speedtest.ams1.nl.leaseweb.net` |
+| **Digital Realty AMS1** | Amsterdam | Hyperscale | `ams.speedtest.clouvider.net` |
+| **Iron Mountain AM1** | Amsterdam | Enterprise | `speedtest.ams1.novogara.net` |
+
+### 🌐 Internet Exchanges in Nederland
+- **AMS-IX Amsterdam** - Een van de grootste ter wereld
+- **NL-ix Dronten** - Regionaal exchange
+- **NIKHEF Amsterdam** - Onderzoeksnetwerk
+
+## 🚀 Performance Tuning voor Nederlandse Netwerken
+
+### IPv6 Optimalisatie
+```bash
+# Test IPv6 prestaties (Nederland heeft ~50% IPv6 adoptie)
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -6 -t 30
+
+# Vergelijk IPv4 vs IPv6
+echo "IPv4 test:" && iperf3 -c iperf-ams-nl.eranium.net -p 5205 -4 -t 10
+echo "IPv6 test:" && iperf3 -c iperf-ams-nl.eranium.net -p 5205 -6 -t 10
+```
+
+### Buffer Optimalisatie
+```bash
+# Grote bestanden over Nederlandse netwerken
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -w 1M -t 30
+
+# TCP window scaling test
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -w 64K,128K,256K -t 20
+```
+
+### Parallel Streams voor Glasvezel
+```bash
+# Multi-stream test voor gigabit glasvezel
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -P 4 -t 30
+
+# Progressieve stream test
+for streams in 1 2 4 8; do
+  echo "Testing with $streams streams:"
+  iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -P $streams -t 10
+done
+```
+
+## 📱 Nederlandse Mobiele Netwerken
+
+### 4G/5G Optimalisatie
+```bash
+# Conservatieve mobiele test
+iperf3 -c ping-ams1.online.net -p 5205 -u -b 50M -t 15
+
+# 5G high-speed test
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -u -b 500M -t 10
+
+# Latency test voor gaming
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -t 5 -i 0.5
+```
+
+### Carrier Specifieke Tests
+| **Provider** | **Aanbevolen Test** | **Verwachte Snelheid** |
+|:-------------|:-------------------|:-----------------------|
+| **KPN** | `-u -b 200M` | 4G: 50-150 Mbps, 5G: 200-1000 Mbps |
+| **Vodafone** | `-u -b 150M` | 4G: 40-120 Mbps, 5G: 150-800 Mbps |
+| **T-Mobile** | `-u -b 100M` | 4G: 30-100 Mbps, 5G: 100-600 Mbps |
+
+## 🔍 Troubleshooting Nederlandse Connecties
+
+### Algemene Problemen
+```bash
+# Connectiviteit test
+ping -c 5 iperf-ams-nl.eranium.net
+
+# MTU discovery voor Nederlandse netwerken
+ping -M do -s 1472 speedtest.ams1.nl.leaseweb.net
+
+# Traceroute naar Amsterdam
+traceroute iperf-ams-nl.eranium.net
+```
+
+### ISP-Specifieke Problemen
+
+#### KPN Glasvezel Problemen
+- **Symptoom**: Lage snelheden 's avonds
+- **Oplossing**: Test met `-P 2` (multiple streams)
+- **Check**: IPv6 vs IPv4 vergelijking
+
+#### Ziggo Cable Issues  
+- **Symptoom**: Variabele snelheden
+- **Oplossing**: Test op verschillende tijden
+- **Check**: Upload/download ratio
+
+#### T-Mobile/Tele2 Issues
+- **Symptoom**: Inconsistente prestaties
+- **Oplossing**: Gebruik verschillende servers
+- **Check**: Routing via AMS-IX
+
+## 🎯 Nederlandse Gaming/Streaming Optimalisatie
+
+### Gaming (Lage Latency)
+```bash
+# CS:GO/Valorant servers Amsterdam
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -t 5 -i 0.5
+
+# Console gaming test
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -u -b 10M -t 30
+```
+
+### Streaming (Hoge Bandbreedte)
+```bash
+# 4K streaming test
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -u -b 25M -t 60
+
+# Twitch/YouTube upload test
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -R -u -b 10M -t 30
+```
+
+## 📈 Nederlandse Netwerk Benchmarks
+
+### Typische Snelheden per Type
+| **Connectie Type** | **Download** | **Upload** | **Latency** |
+|:-------------------|:-------------|:-----------|:------------|
+| **Glasvezel 100/100** | 95-100 Mbps | 95-100 Mbps | 1-3 ms |
+| **Glasvezel 500/500** | 450-500 Mbps | 450-500 Mbps | 1-3 ms |
+| **Glasvezel 1000/1000** | 900-1000 Mbps | 900-1000 Mbps | 1-3 ms |
+| **Cable 200/20** | 180-200 Mbps | 18-20 Mbps | 5-15 ms |
+| **VDSL 50/10** | 45-50 Mbps | 8-10 Mbps | 8-20 ms |
+| **4G** | 30-150 Mbps | 10-50 Mbps | 20-50 ms |
+| **5G** | 100-1000 Mbps | 50-200 Mbps | 10-30 ms |
+
+## 🚀 Nederlandse Performance Benchmarking
+
+### Glasvezel Prestatie Tests
+```bash
+# Symmetrische glasvezel benchmark
+echo "Testing 100/100 Mbps glasvezel:"
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 --bidir -t 30
+
+echo "Testing 500/500 Mbps glasvezel:"
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -P 2 --bidir -t 30
+
+echo "Testing 1000/1000 Mbps glasvezel:"
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -P 4 --bidir -t 30
+```
+
+### Cable/DOCSIS Prestatie Tests
+```bash
+# Asymmetrische cable benchmark  
+echo "Cable download test:"
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -t 30
+
+echo "Cable upload test (meestal lager):"
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -R -t 30
+
+# Upload/Download ratio berekening
+# Verwacht: Download 5x-20x hoger dan upload bij cable
+```
+
+### ADSL/VDSL Prestatie Tests
+```bash
+# Copper lijn tests
+echo "ADSL/VDSL download:"
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -t 20
+
+echo "ADSL/VDSL upload:"  
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -R -t 20
+
+# Stabiliteit test (copper lijnen kunnen variëren)
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -t 60 -i 10
+```
+
+## 📱 Nederlandse Mobiele Netwerk Optimalisatie
+
+### 4G/5G Provider Prestaties
+
+#### KPN Mobiel
+```bash
+# KPN 4G test (conservatief)
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -u -b 100M -t 15
+
+# KPN 5G test (aggressief bij goede dekking)
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -u -b 500M -t 15
+
+# Latency test voor gaming
+ping -c 10 iperf-ams-nl.eranium.net
+```
+
+#### VodafoneZiggo Mobiel
+```bash
+# VodafoneZiggo 4G test
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -u -b 80M -t 15
+
+# VodafoneZiggo 5G test
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -u -b 400M -t 15
+```
+
+#### T-Mobile Nederland
+```bash
+# T-Mobile 4G test
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -u -b 60M -t 15
+
+# T-Mobile 5G test  
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -u -b 300M -t 15
+```
+
+### Nederlandse 5G Frequenties & Prestaties
+| **Frequentieband** | **Bereik** | **Snelheid** | **Penetratie** | **Provider** |
+|:-------------------|:-----------|:-------------|:---------------|:-------------|
+| **700 MHz** | Excellent | Medium | Excellent | KPN, VZ, T-Mobile |
+| **1800 MHz** | Good | Medium | Good | KPN, VZ, T-Mobile |
+| **2100 MHz** | Medium | High | Medium | KPN, VZ |
+| **3.5 GHz** | Limited | Very High | Poor | KPN, VZ, T-Mobile |
+
+### Mobiele Test Scenario's
+```bash
+# Binnen stedelijk gebied (Amsterdam/Rotterdam/Den Haag)
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -u -b 200M -t 10
+
+# Buiten/landelijk gebied
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -u -b 50M -t 10
+
+# Binnen gebouwen (verminderde prestaties)
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -u -b 30M -t 10
+
+# Snelweg/trein (handover variabiliteit)
+iperf3 -c ping-ams1.online.net -p 5205 -u -b 40M -t 5
+```
+
+## 🔧 Geavanceerde Nederlandse Netwerk Troubleshooting
+
+### KPN Glasvezel Problemen
+
+#### Probleem: Avondspits vertraging
+**Symptomen**: Snelheden dalen tussen 19:00-23:00
+**Diagnose**:
+```bash
+# Test tijdens verschillende tijden
+echo "Rustig uur (10:00):"
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -t 15
+
+echo "Spitsuur (21:00):"
+iperf3 -c iperf-ams-nl.eranium.net -p 5205 -t 15
+```
+**Oplossing**: Gebruik meerdere streams (`-P 2` of `-P 4`)
+
+#### Probleem: IPv6 vs IPv4 prestatie
+**Diagnose**:
+```bash
+echo "IPv4 prestatie:"
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -4 -t 10
+
+echo "IPv6 prestatie:"
+iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5205 -6 -t 10
+```
+
+### Ziggo Cable Problemen
+
+#### Probleem: Upload veel lager dan advertised
+**Verwacht**: Bij 200/20 plan, upload vaak 15-18 Mbps
+**Test**:
+```bash
+# Upload realiteitscheck
+iperf3 -c speedtest.nl3.mirhosting.net -p 5205 -R -t 30
+```
+
+#### Probleem: Variabele snelheden (shared medium)
+**Test stabiliteit**:
+```bash
+# Langere test met intervallen
+iperf3 -c ams.speedtest.clouvider.net -p 5205 -t 300 -i 30
+```
+
+### T-Mobile/Tele2 Hybride Problemen
+
+#### Probleem: Onverwachte routing
+**Diagnose**:
+```bash
+# Traceroute naar Nederlandse servers
+traceroute iperf-ams-nl.eranium.net
+traceroute speedtest.ams1.nl.leaseweb.net
+
+# Check voor internationale hops
+```
+
+### Algemene Nederlandse ISP Issues
+
+#### DNS Prestatie
+```bash
+# Test Nederlandse DNS servers
+dig @8.8.8.8 iperf-ams-nl.eranium.net
+dig @1.1.1.1 iperf-ams-nl.eranium.net  
+dig @194.242.2.2 iperf-ams-nl.eranium.net # Xs4all DNS
+```
+
+#### MTU Discovery voor Nederlandse Netwerken
+```bash
+# Nederlandse standaard MTU test
+ping -M do -s 1472 iperf-ams-nl.eranium.net # 1500 MTU
+ping -M do -s 1436 iperf-ams-nl.eranium.net # PPPoE compensatie
+
+# Glasvezel jumbo frames (als ondersteund)
+ping -M do -s 8972 iperf-ams-nl.eranium.net # 9000 MTU
+```
 
 ---
 
@@ -113,7 +538,14 @@
 
 ## Table of Contents
 
-* [Documentation](https://github.com/R0GGER/public-iperf3-servers/blob/main/docs.md#iperf3)
+* [Nederlandse Optimalisatie Gids](https://github.com/Lenvanderhof/public-iperf3-servers-NL/blob/main/docs-nl.md) 🇳🇱
+  * [ISP-Specifieke Aanbevelingen](https://github.com/Lenvanderhof/public-iperf3-servers-NL/blob/main/docs-nl.md#-nederlandse-isp-optimalisaties)
+  * [Datacenter Locaties](https://github.com/Lenvanderhof/public-iperf3-servers-NL/blob/main/docs-nl.md#-nederlandse-datacenter-ecosystem)
+  * [Gaming & Streaming Tips](https://github.com/Lenvanderhof/public-iperf3-servers-NL/blob/main/docs-nl.md#-nederlandse-gaming--streaming-optimalisatie)
+  * [IPv6 Optimalisatie](https://github.com/Lenvanderhof/public-iperf3-servers-NL/blob/main/docs-nl.md#-nederlandse-ipv6-adoptie)
+  * [Troubleshooting Gids](https://github.com/Lenvanderhof/public-iperf3-servers-NL/blob/main/docs-nl.md#-nederlandse-netwerk-troubleshooting)
+
+* [General Documentation](https://github.com/R0GGER/public-iperf3-servers/blob/main/docs.md#iperf3) 🌍
   * [Installation](https://github.com/R0GGER/public-iperf3-servers/blob/main/docs.md#installation)
   * [Basic Usage](https://github.com/R0GGER/public-iperf3-servers/blob/main/docs.md#basic-usage)
   * [Test Scenarios & Protocol Differences](https://github.com/R0GGER/public-iperf3-servers/blob/main/docs.md#test-scenarios--protocol-differences)
@@ -178,97 +610,200 @@ Do you want to add/remove an IP or HOST to this list? Please create a [new issue
 | iperf3 -c speedtest.uztelecom.uz -p 5200-5209 | -R,-6,-u | 10 | UZ \| ![uz](https://flagcdn.com/16x12/uz.png) | Tashkent |
 
 
-### EUROPE
-| **COMMAND** | **OPTIONS** | **GB/S** | **COUNTRY** | **SITE** |
+### EUROPE 🇪🇺
+> **Servers ordered by proximity to the Netherlands 🇳🇱 - Closest first for optimal performance**
+
+#### 🇳🇱 NETHERLANDS (Local Servers - Best Performance)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** | **PROVIDER** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|:-------------|
+| iperf3 -c 185.102.218.1 | -R,-u | 2x10 | ~1ms | Amsterdam | DATAPACKET |
+| iperf3 -c a204.speedtest.wobcom.de | -R,-6 | 2x25 | ~1ms | Amsterdam | WOBCOM |
+| iperf3 -c ams.speedtest.clouvider.net -p 5200-5209 | -R,-6,-u | 10 | ~1ms | Amsterdam | Clouvider |
+| iperf3 -c iperf-ams-nl.eranium.net -p 5201-5210 | -R,-6,-u | 100 | ~1ms | Amsterdam | Eranium |
+| iperf3 -c lg.ams-nl.terrahost.com -p 9206-9240 | -R,-6,-u |  | ~1ms | Amsterdam | TerraHost |
+| iperf3 -c ping-ams1.online.net -p 5200-5209 | -R,-u | 10 | ~1ms | Amsterdam | Scaleway |
+| iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5201-5210 | -R,-6 | 10 | ~1ms | Amsterdam | LeaseWeb |
+| iperf3 -c speedtest.ams1.novogara.net -p 5200-5209 | -R,-6,-u | 20 | ~1ms | Amsterdam | Novogara |
+| iperf3 -c speedtest.ams2.nl.leaseweb.net -p 5201-5210 | -R,-6 | 10 | ~1ms | Amsterdam | LeaseWeb |
+| iperf3 -c speedtest.nl3.mirhosting.net -p 5201-5210 | -R,-6,-u | 40 | ~1ms | Amsterdam | Mirhosting |
+| iperf3 -c iperf.worldstream.nl | -R,-6 | 10 | ~2ms | Naaldwijk | Worldstream |
+
+#### 🇧🇪 BELGIUM (Very Close - ~5-10ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
 |:------------|:-----------:|:--------:|:-----------:|:---------|
-| iperf3 -c 185.180.12.40 | -R,-u | 2x10 | AT \| ![at](https://flagcdn.com/16x12/at.png) | Vienna |
-| iperf3 -c lg.vie.alwyzon.net -p 5202-5203 | -R |  | AT \| ![at](https://flagcdn.com/16x12/at.png) | Vienna |
-| iperf3 -c 207.211.214.65 | -R,-u | 2x10 | BE \| ![be](https://flagcdn.com/16x12/be.png) | Brussels |
-| iperf3 -c 37.19.203.1 | -R,-u | 2x10 | BG \| ![bg](https://flagcdn.com/16x12/bg.png) | Sofia |
-| iperf3 -c speedtest.shinternet.ch -p 5200-5209 | -R,-6,-u | 10 | CH \| ![ch](https://flagcdn.com/16x12/ch.png) | Schaffhausen |
-| iperf3 -c speedtest.init7.net | -R,-6,-u | 20 | CH \| ![ch](https://flagcdn.com/16x12/ch.png) | Winterthur |
-| iperf3 -c 89.187.165.1 | -R,-u | 2x10 | CH \| ![ch](https://flagcdn.com/16x12/ch.png) | Zürich |
-| iperf3 -c speedtest.iway.ch | -R,-6,-u | 10 | CH \| ![ch](https://flagcdn.com/16x12/ch.png) | Zürich |
-| iperf3 -c 85.163.71.241 | -R,-u |  | CZ \| ![cz](https://flagcdn.com/16x12/cz.png) | Hrdlořezy |
-| iperf3 -c rychlost.poda.cz -p 5201-5209 | -R |  | CZ \| ![cz](https://flagcdn.com/16x12/cz.png) | Mikulov |
-| iperf3 -c 185.152.65.113 | -R,-u | 2x10 | CZ \| ![cz](https://flagcdn.com/16x12/cz.png) | Prague |
-| iperf3 -c a110.speedtest.wobcom.de | -R,-6 | 2x25 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Berlin |
-| iperf3 -c a209.speedtest.wobcom.de | -R,-6 | 2x25 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Berlin |
-| iperf3 -c a208.speedtest.wobcom.de | -R,-6 | 2x25 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Düsseldorf |
-| iperf3 -c 178.215.228.109 -p 9204-9240 | -R,-u |  | DE \| ![de](https://flagcdn.com/16x12/de.png) | Frankfurt |
-| iperf3 -c 185.102.219.93 | -R,-u | 2x10 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Frankfurt |
-| iperf3 -c a205.speedtest.wobcom.de | -R,-6 | 2x25 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Frankfurt |
-| iperf3 -c a210.speedtest.wobcom.de | -R,-6 | 2x25 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Frankfurt |
-| iperf3 -c fra.speedtest.clouvider.net -p 5200-5209 | -R,-6,-u | 10 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Frankfurt |
-| iperf3 -c spd-desrv.hostkey.com -p 5201-5209 | -R | 10 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Frankfurt |
-| iperf3 -c speedtest.fra1.de.leaseweb.net -p 5201-5210 | -R,-6 | 10 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Frankfurt |
-| iperf3 -c speedtest.ip-projects.de | -R,-6,-u | 10 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Frankfurt |
-| iperf3 -c speedtest.wtnet.de -p 5200-5209 | -R,-6,-u | 40 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Norderstedt |
-| iperf3 -c speedtest.wtnet.de -p 5300-5309 | -R,-6,-u | 40 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Norderstedt |
-| iperf3 -c a400.speedtest.wobcom.de | -R,-6 | 2x25 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Wolfsburg |
-| iperf3 -c speedtest.wobcom.de | -R,-6 | 2x25 | DE \| ![de](https://flagcdn.com/16x12/de.png) | Wolfsburg |
-| iperf3 -c 121.127.45.65 | -R | 2x10 | DK \| ![dk](https://flagcdn.com/16x12/dk.png) | Copenhagen |
-| iperf3 -c speed1.fiberby.dk -p 9201-9240 | -R,-6,-u | 25 | DK \| ![dk](https://flagcdn.com/16x12/dk.png) | Copenhagen |
-| iperf3 -c speed2.fiberby.dk -p 9201-9240 | -R,-6,-u | 25 | DK \| ![dk](https://flagcdn.com/16x12/dk.png) | Copenhagen |
-| iperf3 -c speedtest.hiper.dk -p 5201-5205 | -R,-6,-u |  | DK \| ![dk](https://flagcdn.com/16x12/dk.png) | Copenhagen |
-| iperf3 -c 185.93.3.50 -p 5201 | -R,-u | 2x10 | ES \| ![es](https://flagcdn.com/16x12/es.png) | Madrid |
-| iperf3 -c spd-fisrv.hostkey.com -p 5201-5209 | -R | 10 | FI \| ![fi](https://flagcdn.com/16x12/fi.png) | Helsinki |
-| iperf3 -c 138.199.14.66 | -R,-u | 2x10 | FR \| ![fr](https://flagcdn.com/16x12/fr.png) | Marseille |
-| iperf3 -c 185.93.2.193 | -R,-u | 2x10 | FR \| ![fr](https://flagcdn.com/16x12/fr.png) | Paris |
-| iperf3 -c iperf.online.net -p 5200-5209 | -R,-6,-u | 100 | FR \| ![fr](https://flagcdn.com/16x12/fr.png) | Paris |
-| iperf3 -c iperf3.moji.fr -p 5200-5240 | -R,-6 | 100 | FR \| ![fr](https://flagcdn.com/16x12/fr.png) | Paris |
-| iperf3 -c ping-90ms.online.net -p 5200-5209 | -R,-6 | 100 | FR \| ![fr](https://flagcdn.com/16x12/fr.png) | Paris |
-| iperf3 -c ping6-90ms.online.net -p 5200-5209 | -R,-6 | 100 | FR \| ![fr](https://flagcdn.com/16x12/fr.png) | Paris |
-| iperf3 -c ping6.online.net -p 5200-5209 | -R,-6,-u | 100 | FR \| ![fr](https://flagcdn.com/16x12/fr.png) | Paris |
-| iperf3 -c sbg.proof.ovh.net -p 5201-5210 | -R,-6,-u | 10 | FR \| ![fr](https://flagcdn.com/16x12/fr.png) | Strasbourg |
-| iperf3 -c ping.online.net -p 5200-5209 | -R,-6,-u | 100 | FR \| ![fr](https://flagcdn.com/16x12/fr.png) | Vitry-sur-Seine |
-| iperf3 -c scaleway.testdebit.info -p 9200-9240 | -R,-6 | 10 | FR \| ![fr](https://flagcdn.com/16x12/fr.png) | Vitry-sur-Seine |
-| iperf3 -c 185.59.221.51 | -R,-u | 2x10 | GB \| ![gb](https://flagcdn.com/16x12/gb.png) | London |
-| iperf3 -c iperf.as42831.net -p 5300-5400 | -R,-u |  | GB \| ![gb](https://flagcdn.com/16x12/gb.png) | London |
-| iperf3 -c lon.speedtest.clouvider.net -p 5200-5208 | -R,-6 | 10 | GB \| ![gb](https://flagcdn.com/16x12/gb.png) | London |
-| iperf3 -c speedtest-mer-a.mythic-beasts.com -p 5201-5205 | -R,-u | 10 | GB \| ![gb](https://flagcdn.com/16x12/gb.png) | London |
-| iperf3 -c speedtest.lon1.uk.leaseweb.net -p 5201-5210 | -R,-6 | 10 | GB \| ![gb](https://flagcdn.com/16x12/gb.png) | London |
-| iperf3 -c speedtest.lon12.uk.leaseweb.net -p 5201-5210 | -R,-6 | 10 | GB \| ![gb](https://flagcdn.com/16x12/gb.png) | London |
-| iperf3 -c speedtest2.lightningfibre.net.uk -p 4000-4007 | -R,-u | 10 | GB \| ![gb](https://flagcdn.com/16x12/gb.png) | London |
-| iperf3 -c 169.150.252.2 | -R,-u | 2x10 | GR \| ![gr](https://flagcdn.com/16x12/gr.png) | Athens |
-| iperf3 -c 169.150.242.129 | -R,-u | 2x10 | HR \| ![hr](https://flagcdn.com/16x12/hr.png) | Zagreb |
-| iperf3 -c 87.249.137.8 | -R,-u | 2x10 | IR \| ![ir](https://flagcdn.com/16x12/ir.png) | Dublin |
-| iperf3 -c spd-icsrv.hostkey.com -p 5201 | -R,-6 | 10 | IS \| ![is](https://flagcdn.com/16x12/is.png) | Reykjavik |
-| iperf3 -c it1.speedtest.aruba.it | -R,-u |  | IT \| ![it](https://flagcdn.com/16x12/it.png) | Arezzo |
-| iperf3 -c speed.itgate.net -p 5201-5209 | -R,-6 |  | IT \| ![it](https://flagcdn.com/16x12/it.png) | Gerbido |
-| iperf3 -c 84.17.59.129 | -R,-u | 2x10 | IT \| ![it](https://flagcdn.com/16x12/it.png) | Milan |
-| iperf3 -c 217.61.40.96 | -R |  | IT \| ![it](https://flagcdn.com/16x12/it.png) | Ponte San Pietro |
-| iperf3 -c speedtest.lu.buyvm.net | -R,-6,-u |  | LU \| ![lu](https://flagcdn.com/16x12/lu.png) | Bissen |
-| iperf3 -c 185.102.218.1 | -R,-u | 2x10 | NL \| ![nl](https://flagcdn.com/16x12/nl.png) | Amsterdam |
-| iperf3 -c a204.speedtest.wobcom.de | -R,-6 | 2x25 | NL \| ![nl](https://flagcdn.com/16x12/nl.png) | Amsterdam |
-| iperf3 -c ams.speedtest.clouvider.net -p 5200-5209 | -R,-6,-u | 10 | NL \| ![nl](https://flagcdn.com/16x12/nl.png) | Amsterdam |
-| iperf3 -c iperf-ams-nl.eranium.net -p 5201-5210 | -R,-6,-u | 100 | NL \| ![nl](https://flagcdn.com/16x12/nl.png) | Amsterdam |
-| iperf3 -c lg.ams-nl.terrahost.com -p 9206-9240 | -R,-6,-u |  | NL \| ![nl](https://flagcdn.com/16x12/nl.png) | Amsterdam |
-| iperf3 -c ping-ams1.online.net -p 5200-5209 | -R,-u | 10 | NL \| ![nl](https://flagcdn.com/16x12/nl.png) | Amsterdam |
-| iperf3 -c speedtest.ams1.nl.leaseweb.net -p 5201-5210 | -R,-6 | 10 | NL \| ![nl](https://flagcdn.com/16x12/nl.png) | Amsterdam |
-| iperf3 -c speedtest.ams1.novogara.net -p 5200-5209 | -R,-6,-u | 20 | NL \| ![nl](https://flagcdn.com/16x12/nl.png) | Amsterdam |
-| iperf3 -c speedtest.ams2.nl.leaseweb.net -p 5201-5210 | -R,-6 | 10 | NL \| ![nl](https://flagcdn.com/16x12/nl.png) | Amsterdam |
-| iperf3 -c speedtest.nl3.mirhosting.net -p 5201-5210 | -R,-6,-u | 40 | NL \| ![nl](https://flagcdn.com/16x12/nl.png) | Amsterdam |
-| iperf3 -c iperf.worldstream.nl | -R,-6 | 10 | NL \| ![nl](https://flagcdn.com/16x12/nl.png) | Naaldwijk |
-| iperf3 -c lg.gigahost.no -p 9201-9240 | -R,-6,-u | 100 | NO \| ![no](https://flagcdn.com/16x12/no.png) | Sandefjord |
-| iperf3 -c lg.terrahost.com -p 9200-9240 | -R,-6,-u | 10 | NO \| ![no](https://flagcdn.com/16x12/no.png) | Sandefjord |
-| iperf3 -c speedtest3.itsjefen.no -p 5201-5204 | -R,-6,-u |  | NO \| ![no](https://flagcdn.com/16x12/no.png) | Trondheim |
-| iperf3 -c speed0.intelly.pl -p 5206-5207 | -R,-u | 1 | PL \| ![pl](https://flagcdn.com/16x12/pl.png) | Olsztyn |
-| iperf3 -c 185.246.208.67 | -R,-u | 2x10 | PL \| ![pl](https://flagcdn.com/16x12/pl.png) | Warsaw |
-| iperf3 -c 109.61.94.65 | -R,-u | 2x10 | PT \| ![pt](https://flagcdn.com/16x12/pt.png) | Lisbon |
-| iperf3 -c lisboa.speedtest.net.zon.pt -p 5201-5209 | -R,-6,-u | 10 | PT \| ![pt](https://flagcdn.com/16x12/pt.png) | Lisbon |
-| iperf3 -c porto.speedtest.net.zon.pt -p 5201-5209 | -R,-6,-u | 10 | PT \| ![pt](https://flagcdn.com/16x12/pt.png) | Porto |
-| iperf3 -c  speedtest.cloudity.net -p 5201-5205 | -R,-6,-u | 10 | PT \| ![pt](https://flagcdn.com/16x12/pt.png) | Viana do Castelo |
-| iperf3 -c 185.102.217.170 | -R,-u | 2x10 | RO \| ![ro](https://flagcdn.com/16x12/ro.png) | Bucharest |
-| iperf3 -c speedtest1.sox.rs -p 9201-9240 | -R,-6,-u | 10 | RS \| ![rs](https://flagcdn.com/16x12/rs.png) | Belgrade |
-| iperf3 -c speedtest.kamel.network -p 5201-5205 | -R,-6 | 1 | SE \| ![se](https://flagcdn.com/16x12/se.png) | Kista |
-| iperf3 -c 185.76.9.135 | -R,-u | 2x10 | SE \| ![se](https://flagcdn.com/16x12/se.png) | Stockholm |
-| iperf3 -c speedtest.cityhost.se -p 5201-5206 | -R,-6,-u | 100 | SE \| ![se](https://flagcdn.com/16x12/se.png) | Stockholm |
-| iperf3 -c speedtest.keff.org -p 9201-9240 | -R,-u |  | SE \| ![se](https://flagcdn.com/16x12/se.png) | Stockholm |
-| iperf3 -c speedtest.ownit.se | -R,-u | 1 | SE \| ![se](https://flagcdn.com/16x12/se.png) | Stockholm |
-| iperf3 -c 156.146.40.65 | -R,-u | 2x10 | SK \| ![sk](https://flagcdn.com/16x12/sk.png) | Bratislava |
-| iperf3 -c iperf.volia.net -p 5201 | -R |  | UA \| ![ua](https://flagcdn.com/16x12/ua.png) |  |
-| iperf3 -c 37.19.218.65 | -R,-u | 2x10 | UA \| ![ua](https://flagcdn.com/16x12/ua.png) | Kyiv |
+| iperf3 -c 207.211.214.65 | -R,-u | 2x10 | ~8ms | Brussels |
+
+#### 🇩🇪 GERMANY (Close - ~10-25ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c a208.speedtest.wobcom.de | -R,-6 | 2x25 | ~15ms | Düsseldorf |
+| iperf3 -c speedtest.wtnet.de -p 5200-5209 | -R,-6,-u | 40 | ~20ms | Norderstedt |
+| iperf3 -c speedtest.wtnet.de -p 5300-5309 | -R,-6,-u | 40 | ~20ms | Norderstedt |
+| iperf3 -c a400.speedtest.wobcom.de | -R,-6 | 2x25 | ~15ms | Wolfsburg |
+| iperf3 -c speedtest.wobcom.de | -R,-6 | 2x25 | ~15ms | Wolfsburg |
+| iperf3 -c a110.speedtest.wobcom.de | -R,-6 | 2x25 | ~20ms | Berlin |
+| iperf3 -c a209.speedtest.wobcom.de | -R,-6 | 2x25 | ~20ms | Berlin |
+| iperf3 -c 178.215.228.109 -p 9204-9240 | -R,-u |  | ~15ms | Frankfurt |
+| iperf3 -c 185.102.219.93 | -R,-u | 2x10 | ~15ms | Frankfurt |
+| iperf3 -c a205.speedtest.wobcom.de | -R,-6 | 2x25 | ~15ms | Frankfurt |
+| iperf3 -c a210.speedtest.wobcom.de | -R,-6 | 2x25 | ~15ms | Frankfurt |
+| iperf3 -c fra.speedtest.clouvider.net -p 5200-5209 | -R,-6,-u | 10 | ~15ms | Frankfurt |
+| iperf3 -c spd-desrv.hostkey.com -p 5201-5209 | -R | 10 | ~15ms | Frankfurt |
+| iperf3 -c speedtest.fra1.de.leaseweb.net -p 5201-5210 | -R,-6 | 10 | ~15ms | Frankfurt |
+| iperf3 -c speedtest.ip-projects.de | -R,-6,-u | 10 | ~15ms | Frankfurt |
+
+#### 🇱🇺 LUXEMBOURG (Close - ~15ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c speedtest.lu.buyvm.net | -R,-6,-u |  | ~15ms | Bissen |
+
+#### 🇬🇧 UNITED KINGDOM (Close - ~15-25ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 185.59.221.51 | -R,-u | 2x10 | ~15ms | London |
+| iperf3 -c iperf.as42831.net -p 5300-5400 | -R,-u |  | ~15ms | London |
+| iperf3 -c lon.speedtest.clouvider.net -p 5200-5208 | -R,-6 | 10 | ~15ms | London |
+| iperf3 -c speedtest-mer-a.mythic-beasts.com -p 5201-5205 | -R,-u | 10 | ~15ms | London |
+| iperf3 -c speedtest.lon1.uk.leaseweb.net -p 5201-5210 | -R,-6 | 10 | ~15ms | London |
+| iperf3 -c speedtest.lon12.uk.leaseweb.net -p 5201-5210 | -R,-6 | 10 | ~15ms | London |
+| iperf3 -c speedtest2.lightningfibre.net.uk -p 4000-4007 | -R,-u | 10 | ~15ms | London |
+
+#### 🇩🇰 DENMARK (Close - ~20-30ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 121.127.45.65 | -R | 2x10 | ~25ms | Copenhagen |
+| iperf3 -c speed1.fiberby.dk -p 9201-9240 | -R,-6,-u | 25 | ~25ms | Copenhagen |
+| iperf3 -c speed2.fiberby.dk -p 9201-9240 | -R,-6,-u | 25 | ~25ms | Copenhagen |
+| iperf3 -c speedtest.hiper.dk -p 5201-5205 | -R,-6,-u |  | ~25ms | Copenhagen |
+
+#### 🇫🇷 FRANCE (Moderate - ~20-40ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 185.93.2.193 | -R,-u | 2x10 | ~20ms | Paris |
+| iperf3 -c iperf.online.net -p 5200-5209 | -R,-6,-u | 100 | ~20ms | Paris |
+| iperf3 -c iperf3.moji.fr -p 5200-5240 | -R,-6 | 100 | ~20ms | Paris |
+| iperf3 -c ping-90ms.online.net -p 5200-5209 | -R,-6 | 100 | ~20ms | Paris |
+| iperf3 -c ping6-90ms.online.net -p 5200-5209 | -R,-6 | 100 | ~20ms | Paris |
+| iperf3 -c ping6.online.net -p 5200-5209 | -R,-6,-u | 100 | ~20ms | Paris |
+| iperf3 -c ping.online.net -p 5200-5209 | -R,-6,-u | 100 | ~35ms | Vitry-sur-Seine |
+| iperf3 -c scaleway.testdebit.info -p 9200-9240 | -R,-6 | 10 | ~35ms | Vitry-sur-Seine |
+| iperf3 -c sbg.proof.ovh.net -p 5201-5210 | -R,-6,-u | 10 | ~25ms | Strasbourg |
+| iperf3 -c 138.199.14.66 | -R,-u | 2x10 | ~40ms | Marseille |
+
+#### 🇨🇭 SWITZERLAND (Moderate - ~25-35ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 89.187.165.1 | -R,-u | 2x10 | ~25ms | Zürich |
+| iperf3 -c speedtest.iway.ch | -R,-6,-u | 10 | ~25ms | Zürich |
+| iperf3 -c speedtest.init7.net | -R,-6,-u | 20 | ~30ms | Winterthur |
+| iperf3 -c speedtest.shinternet.ch -p 5200-5209 | -R,-6,-u | 10 | ~35ms | Schaffhausen |
+
+#### 🇳🇴 NORWAY (Moderate - ~30-40ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c lg.gigahost.no -p 9201-9240 | -R,-6,-u | 100 | ~35ms | Sandefjord |
+| iperf3 -c lg.terrahost.com -p 9200-9240 | -R,-6,-u | 10 | ~35ms | Sandefjord |
+| iperf3 -c speedtest3.itsjefen.no -p 5201-5204 | -R,-6,-u |  | ~45ms | Trondheim |
+
+#### 🇮🇪 IRELAND (Moderate - ~30-40ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 87.249.137.8 | -R,-u | 2x10 | ~35ms | Dublin |
+
+#### 🇦🇹 AUSTRIA (Moderate - ~35-45ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 185.180.12.40 | -R,-u | 2x10 | ~40ms | Vienna |
+| iperf3 -c lg.vie.alwyzon.net -p 5202-5203 | -R |  | ~40ms | Vienna |
+
+#### 🇸🇪 SWEDEN (Moderate - ~40-50ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c speedtest.kamel.network -p 5201-5205 | -R,-6 | 1 | ~45ms | Kista |
+| iperf3 -c 185.76.9.135 | -R,-u | 2x10 | ~45ms | Stockholm |
+| iperf3 -c speedtest.cityhost.se -p 5201-5206 | -R,-6,-u | 100 | ~45ms | Stockholm |
+| iperf3 -c speedtest.keff.org -p 9201-9240 | -R,-u |  | ~45ms | Stockholm |
+| iperf3 -c speedtest.ownit.se | -R,-u | 1 | ~45ms | Stockholm |
+
+#### 🇵🇱 POLAND (Moderate - ~40-60ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 185.246.208.67 | -R,-u | 2x10 | ~50ms | Warsaw |
+| iperf3 -c speed0.intelly.pl -p 5206-5207 | -R,-u | 1 | ~55ms | Olsztyn |
+
+#### 🇨🇿 CZECH REPUBLIC (Moderate - ~45-55ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 185.152.65.113 | -R,-u | 2x10 | ~45ms | Prague |
+| iperf3 -c 85.163.71.241 | -R,-u |  | ~50ms | Hrdlořezy |
+| iperf3 -c rychlost.poda.cz -p 5201-5209 | -R |  | ~55ms | Mikulov |
+
+#### 🇸🇰 SLOVAKIA (Moderate - ~50-60ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 156.146.40.65 | -R,-u | 2x10 | ~55ms | Bratislava |
+
+#### 🇮🇹 ITALY (Far - ~50-70ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 84.17.59.129 | -R,-u | 2x10 | ~55ms | Milan |
+| iperf3 -c speed.itgate.net -p 5201-5209 | -R,-6 |  | ~60ms | Gerbido |
+| iperf3 -c 217.61.40.96 | -R |  | ~65ms | Ponte San Pietro |
+| iperf3 -c it1.speedtest.aruba.it | -R,-u |  | ~65ms | Arezzo |
+
+#### 🇵🇹 PORTUGAL (Far - ~60-80ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 109.61.94.65 | -R,-u | 2x10 | ~65ms | Lisbon |
+| iperf3 -c lisboa.speedtest.net.zon.pt -p 5201-5209 | -R,-6,-u | 10 | ~65ms | Lisbon |
+| iperf3 -c porto.speedtest.net.zon.pt -p 5201-5209 | -R,-6,-u | 10 | ~70ms | Porto |
+| iperf3 -c  speedtest.cloudity.net -p 5201-5205 | -R,-6,-u | 10 | ~75ms | Viana do Castelo |
+
+#### 🇪🇸 SPAIN (Far - ~70-90ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 185.93.3.50 -p 5201 | -R,-u | 2x10 | ~75ms | Madrid |
+
+#### 🇫🇮 FINLAND (Far - ~80-100ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c spd-fisrv.hostkey.com -p 5201-5209 | -R | 10 | ~85ms | Helsinki |
+
+#### 🇮🇸 ICELAND (Far - ~100-120ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c spd-icsrv.hostkey.com -p 5201 | -R,-6 | 10 | ~110ms | Reykjavik |
+
+#### 🇷🇴 ROMANIA (Far - ~80-100ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 185.102.217.170 | -R,-u | 2x10 | ~85ms | Bucharest |
+
+#### 🇷🇸 SERBIA (Far - ~90-110ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c speedtest1.sox.rs -p 9201-9240 | -R,-6,-u | 10 | ~95ms | Belgrade |
+
+#### 🇭🇷 CROATIA (Far - ~90-110ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 169.150.242.129 | -R,-u | 2x10 | ~95ms | Zagreb |
+
+#### 🇬🇷 GREECE (Far - ~100-120ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 169.150.252.2 | -R,-u | 2x10 | ~110ms | Athens |
+
+#### 🇧🇬 BULGARIA (Far - ~100-120ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 37.19.203.1 | -R,-u | 2x10 | ~110ms | Sofia |
+
+#### 🇺🇦 UKRAINE (Very Far - ~120+ms)
+| **COMMAND** | **OPTIONS** | **GB/S** | **LATENCY** | **SITE** |
+|:------------|:-----------:|:--------:|:-----------:|:---------|
+| iperf3 -c 37.19.218.65 | -R,-u | 2x10 | ~125ms | Kyiv |
+| iperf3 -c iperf.volia.net -p 5201 | -R |  | ~130ms |  |
 
 
 ### LATIN AMERICA
@@ -338,6 +873,24 @@ Do you want to add/remove an IP or HOST to this list? Please create a [new issue
 | iperf3 -c chch.linetest.nz -p 5300-5309 | -R | 10 | NZ \| ![nz](https://flagcdn.com/16x12/nz.png) | Christchurch |
 | iperf3 -c 154.81.51.4  | -R,-u | 2x10 | PG \| ![pg](https://flagcdn.com/16x12/pg.png) | Port Moresby |
 
+## 🛠️ Interactieve Nederlandse Tools
+
+### Nederlandse Geoptimaliseerde Tools
+```bash
+# Interactieve server selector met ISP detectie
+curl -s https://raw.githubusercontent.com/Lenvanderhof/public-iperf3-servers-NL/main/interactive-nl.sh | bash
+
+# Nederlandse automatische finder & tester
+curl -s https://raw.githubusercontent.com/Lenvanderhof/public-iperf3-servers-NL/main/findtest-nl.sh | bash
+```
+
+**Voordelen van Nederlandse tools:**
+- 🔍 Automatische ISP detectie (KPN, Ziggo, T-Mobile)
+- 🎯 Intelligente server selectie gebaseerd op je verbindingstype
+- 🇳🇱 Nederlandse taal en context
+- ⚡ Geoptimaliseerd voor Nederlandse netwerk karakteristieken
+- 📊 ISP-specifieke test aanbevelingen
+
 ## Export
 
 | CONTINENT (NocoDB)                                           | .CSV                                                         | .XLSX                                                        | .JSON                                                        |
@@ -353,5 +906,40 @@ Do you want to add/remove an IP or HOST to this list? Please create a [new issue
 :arrows_counterclockwise: ​**CSV & JSON GENERATOR**: https://export.iperf3serverlist.net
 
 ## Contact
+
+**Voor de Nederlandse community:**
+- GitHub: https://github.com/Lenvanderhof/public-iperf3-servers-NL
+- Nederlandse iPerf3 discussies: Gebruik GitHub Issues
+- Server toevoegingen/wijzigingen: Maak een Pull Request
+- Nederlandse tech communities: Tweakers, FOK!, Reddit r/thenetherlands
+
+**Originele project:**
 Contact me via e-mail - r0gger[at]iperf3serverlist.net
+
+## 🤝 Bijdragen aan het Nederlandse Project
+
+### Server Toevoegingen
+Heb je een Nederlandse iPerf3 server die toegevoegd moet worden?
+1. Zorg dat de server stabiel is (>90% uptime)
+2. Test de server vanuit verschillende Nederlandse netwerken
+3. Maak een GitHub Issue met server details
+4. Include: hostname/IP, poort, capaciteit, locatie, provider
+
+### Verbeteringen
+- Nederlandse ISP specifieke optimalisaties
+- Nieuwe test scenario's
+- Documentatie verbeteringen
+- Nederlandse taal verbeteringen
+
+### Datacenter Partnerships
+Nederlandse hosting providers die willen bijdragen:
+- Publieke iPerf3 servers beschikbaar stellen
+- Nederlandse community ondersteunen
+- Netwerk prestatie transparantie
+
+---
+
+**🇳🇱 Gemaakt voor Nederlandse gebruikers, door Nederlandse contributors**
+
+*Dit project is een Nederlandse variant van het originele public-iperf3-servers project, geoptimaliseerd voor Nederlandse netwerken en gebruikers.*
 
